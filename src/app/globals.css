@@ -22,11 +22,12 @@ body {
   margin: 0;
 }
 
-main {
-  flex: 1;
-}
-
 a {
   color: white;
   text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
 }
