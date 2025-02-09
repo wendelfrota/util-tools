@@ -1,20 +1,18 @@
+import styles from '../page.module.css';
+
 export default function Footer() {
     return (
-        <footer style={footerStyle}>
-            <div>
-                <p>© {new Date().getFullYear()} Util Tools</p>
-                <p>
-                    <a href="https://www.linkedin.com/in/wendel-frota-11649b279" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-                    <a href="https://github.com/wendelfrota" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </p>
+        <footer className={styles.footer}>
+            <div className={styles.contact}>
+                <h2>Get in touch</h2>
+
+                <form className={styles.form}>
+                    <input type="text" placeholder="Name" required className={styles.input} />
+                    <input type="email" placeholder="E-mail" required className={styles.input} />
+                    <textarea placeholder="Your message" required className={styles.textarea}></textarea>
+                    <button type="submit" className={styles.button}>Submit</button>
+                </form>
             </div>
         </footer>
     );
 }
-
-const footerStyle = {
-    backgroundColor: '#191621',
-    padding: '20px 0',
-    textAlign: 'center',
-    marginTop: 'auto',
-};

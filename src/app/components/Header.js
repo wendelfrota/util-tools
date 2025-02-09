@@ -12,10 +12,10 @@ export default function Header() {
                         <Link href="/">Home</Link>
                     </li>
                     <li>
-                        <Link href="/about">About</Link>
+                        <a href="https://www.linkedin.com/in/wendel-frota-11649b279" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </li>
                     <li>
-                        <Link href="/contact">Contact</Link>
+                        <a href="https://github.com/wendelfrota" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </li>
                 </ul>
             </nav>
