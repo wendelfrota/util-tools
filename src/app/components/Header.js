@@ -27,9 +27,9 @@ const headerStyle = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#333',
+    backgroundColor: '#191621',
     color: 'white',
-    padding: '8px 20px',
+    padding: '.5rem 2rem',
 };
 
 const navStyle = {
