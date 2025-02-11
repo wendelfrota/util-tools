@@ -1,13 +1,14 @@
+import styles from '../page.module.css';
 import Link from 'next/link';
 
 export default function Header() {
     return (
-        <header style={headerStyle}>
+        <header className={styles.header}>
             <Link href="/">
                 <h1>Tools</h1>
             </Link>
             <nav>
-                <ul style={navStyle}>
+                <ul className={styles.navbar}>
                     <li>
                         <Link href="/">Home</Link>
                     </li>
@@ -22,20 +23,3 @@ export default function Header() {
         </header>
     );
 }
-
-const headerStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: '#191621',
-    color: 'white',
-    padding: '.5rem 2rem',
-};
-
-const navStyle = {
-    listStyle: 'none',
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '20px',
-};
-
